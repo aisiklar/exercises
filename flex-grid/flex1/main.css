@@ -1,5 +1,5 @@
 html {
-    box-sizing:border-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 .image-container img {
-    width: 100%;
+   width: 100%;
 }
 
 .sbox {
@@ -37,8 +37,10 @@ body {
     padding: 20px;
 }
 
-.box1-content {
+.container2 {
+    display: flex;
 }
+
 
 .box1 { 
     background:#1abc9c;
@@ -49,11 +51,24 @@ body {
 }
 
 .box2 { 
+    font-size: 15px;
     background:#3498db;
+    flex: 1 1 200px;
+    padding: 0;
 }
 
 .box3 { 
     background:#9b59b6;
+    font-size: 15px;
+    padding: 0;
+}
+
+.box4 {
+    background:#4b39c1;
+    font-size: 20px;
+    padding: 0;
+    flex: 2 2 300px;
+
 }
 
 @media all and (max-width: 1280px) {
